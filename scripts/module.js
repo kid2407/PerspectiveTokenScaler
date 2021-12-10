@@ -1,7 +1,3 @@
-Hooks.once('init', async function() {
+import {PerspectiveTokenScaler} from "./PerspectiveTokenScaler.js"
 
-});
-
-Hooks.once('ready', async function() {
-
-});
+Hooks.on('preUpdateToken', PerspectiveTokenScaler.handleUpdate)
