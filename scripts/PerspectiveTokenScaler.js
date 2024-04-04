@@ -3,8 +3,8 @@ export class PerspectiveTokenScaler {
     static handleUpdate(token, change) {
         if (token instanceof TokenDocument && (change.x || change.y)) {
             let currentScene = game.scenes.viewed
-            let starterData = currentScene.drawings.filter(d => d.data.text === 'scaler_start')?.[0]?.data
-            let limiterData = currentScene.drawings.filter(d => d.data.text === 'scaler_limit')?.[0]?.data
+            let starterData = currentScene.drawings.filter(d => d.text === 'scaler_start')?.[0]
+            let limiterData = currentScene.drawings.filter(d => d.text === 'scaler_limit')?.[0]
 
             if (typeof starterData !== 'undefined' && typeof limiterData !== 'undefined') {
                 let xDiffMax = limiterData.x - starterData.x
