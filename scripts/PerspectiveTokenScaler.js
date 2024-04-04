@@ -15,7 +15,11 @@ export class PerspectiveTokenScaler {
                 let yDiffCurrent = limiterData.y - (change.y ? change.y : 0)
                 let distance = Math.sqrt(xDiffCurrent * xDiffCurrent + yDiffCurrent * yDiffCurrent)
                 let factor = distance > maxDistance ? 1 : distance / maxDistance
-                change.scale = factor < 0.25 ? 0.25 : factor
+                
+                change.texture = {
+                    'scaleX' : factor < 0.25 ? 0.25 : factor,
+                    'scaleY' : factor < 0.25 ? 0.25 : factor
+                }
             }
         }
     }
