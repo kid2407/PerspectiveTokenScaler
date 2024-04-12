@@ -5,8 +5,8 @@
     "version": "1.0.0",
     "library": "false",
     "manifestPlusVersion": "1.0.0",
-    "minimumCoreVersion": "0.8.9",
-    "compatibleCoreVersion": "0.8.9",
+    "minimumCoreVersion": "10.260",
+    "compatibleCoreVersion": "11.315",
     "authors": [
         {
             "name": "Tobias Franz",
