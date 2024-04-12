@@ -2,7 +2,7 @@
     "name": "perspective-token-scaler",
     "title": "Perspective Token Scaler",
     "description": "A FoundryVTT module to scale tokens based off scaling points",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "library": "false",
     "manifestPlusVersion": "1.0.0",
     "minimumCoreVersion": "10.260",
